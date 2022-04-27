@@ -21,3 +21,28 @@ use App\Http\Controllers\MedicaController;
 
 Route::get('/', [MedicaController::class, 'index']);
 
+Route::get('/', function () {
+    return view('farmacia.index');
+})->name('inicio');
+
+Route::get('/conocenos', function () {
+    return view('farmacia.conocenos');
+})->name('conocenos');
+
+Route::get('/productosTemporada', function () {
+    return view('productos.temporada');
+})->name('productosDeTemporada');
+
+Route::get('/productosDestacados', function () {
+    return view('productos.destacados');
+})->name('productosDestacados');
+
+Route::get('/producto', function () {
+    return view('productos.productoSimple');
+})->name('producto');
+
+Route::get('/envio', function () {
+    return view('envio.envios');
+})->name('envioADomicilio');
+
+
