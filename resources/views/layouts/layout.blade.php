@@ -342,8 +342,8 @@
                                 </a>
                             </li>
                         </ul>
-                        <p class="copyright-text pull-right">Food Code @2013 Designed by <a
-                                href="http://www.themexpert.com">Themexpert</a> All Rights Reserved</p>
+                        <p class="copyright-text pull-right">AndoCodeando @2022 Designed by <a
+                                href="https://www.youtube.com/watch?v=T-CyVvs-yJU&list=RDJf-dYCfMrw4&index=21">ByteCoders</a> All Rights Reserved</p>
                     </div> <!-- End Of /.col-md-12 -->
                 </div> <!-- End Of /.row -->
             </div> <!-- End Of /.container -->

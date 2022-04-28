@@ -14,8 +14,8 @@ Productos destacados
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4">
-					<h1>Shop</h1>
-					<p>A Bunch Of Products</p>
+					<h1>Productos destacados</h1>
+					<p>Los más comprados por nuestros clientes</p>
 				</div>	<!-- End of /.col-md-4 -->
 				<div class="col-md-8 hidden-xs">
 					<ol class="breadcrumb pull-right">
@@ -37,7 +37,7 @@ Productos destacados
 			<div class="row">
 				<div class="col-md-9">
 					<div class="products-heading">
-						<h2>NEW PRODUCTS</h2>
+						<h2>10/10</h2>
 					</div>	<!-- End of /.Products-heading -->
 					<div class="product-grid">
 					    <ul>
@@ -176,7 +176,7 @@ Productos destacados
 							</div>
 						</div>
 						<div class="block">
-							<img src="images/food-ad.png" alt="">
+							<img src="images/descuento.png" alt="">
 						</div>
 						<div class="block">
 							<h4>Latest Food Items</h4>
