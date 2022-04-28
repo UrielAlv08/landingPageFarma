@@ -29,13 +29,17 @@ Route::get('/conocenos', function () {
     return view('farmacia.conocenos');
 })->name('conocenos');
 
-Route::get('/productosTemporada', function () {
-    return view('productos.temporada');
-})->name('productosDeTemporada');
+Route::get('/productosTemporada', [MedicaController::class, 'temporada'])->name('productosDeTemporada');
 
-Route::get('/productosDestacados', function () {
+/* Route::get('/productosTemporada', function () {
+    return view('productos.temporada');
+})->name('productosDeTemporada'); */
+
+Route::get('/productosDestacados', [MedicaController::class, 'destacados'])->name('productosDestacados');
+
+/* Route::get('/productosDestacados', function () {
     return view('productos.destacados');
-})->name('productosDestacados');
+})->name('productosDestacados'); */
 
 Route::get('/producto', function () {
     return view('productos.productoSimple');
@@ -45,8 +49,10 @@ Route::get('/envio', function () {
     return view('envio.envios');
 })->name('envioADomicilio');
 
-Route::get('/ofertas', function () {
+Route::get('/ofertas', [MedicaController::class, 'oferta'])->name('ofertas');
+
+/* Route::get('/ofertas', function () {
     return view('productos.ofertas');
-})->name('ofertas');
+})->name('ofertas'); */
 
 

@@ -44,25 +44,10 @@ Productos destacados
 					        <li>
 					            <div class="products">
 									<a href="#">
-										<img src="images/product-image-8.jpg" alt="">
+										<img src="{{$medi1->imagen}}" alt="">
 									</a>
 									<a href="#">
-										<h4>Amazing Italian Sauces</h4>
-									</a>
-									<p class="price">From: £69.99</p>
-									<div >
-										<a class="view-link shutter" href="#">
-										<i class="fa fa-plus-circle"></i>Add To Cart</a>
-									</div>
-								</div>	<!-- End of /.products -->
-					        </li>
-					        <li>
-					            <div class="products">
-									<a href="#">
-										<img src="images/product-image-8.jpg" alt="">
-									</a>
-									<a href="#">
-										<h4>Amazing Italian Sauces</h4>
+										<h4>{{$medi1->nombre}}</h4>
 									</a>
 									<p class="price">From: £69.99</p>
 									<div >
@@ -74,25 +59,10 @@ Productos destacados
 					        <li>
 					            <div class="products">
 									<a href="#">
-										<img src="images/product-image-8.jpg" alt="">
+										<img src="{{$medi2->imagen}}" alt="">
 									</a>
 									<a href="#">
-										<h4>Amazing Italian Sauces</h4>
-									</a>
-									<p class="price">From: £69.99</p>
-									<div >
-										<a class="view-link shutter" href="#">
-										<i class="fa fa-plus-circle"></i>Add To Cart</a>
-									</div>
-								</div>	<!-- End of /.products -->
-					        </li>
-					        <li>
-					            <div class="products">
-									<a href="#">
-										<img src="images/product-image-8.jpg" alt="">
-									</a>
-									<a href="#">
-										<h4>Amazing Italian Sauces</h4>
+										<h4>{{$medi2->nombre}}</h4>
 									</a>
 									<p class="price">From: £69.99</p>
 									<div >
@@ -104,10 +74,40 @@ Productos destacados
 					        <li>
 					            <div class="products">
 									<a href="#">
-										<img src="images/product-image-8.jpg" alt="">
+										<img src="{{$medi3->imagen}}" alt="">
 									</a>
 									<a href="#">
-										<h4>Amazing Italian Sauces</h4>
+										<h4>{{$medi3->nombre}}</h4>
+									</a>
+									<p class="price">From: £69.99</p>
+									<div >
+										<a class="view-link shutter" href="#">
+										<i class="fa fa-plus-circle"></i>Add To Cart</a>
+									</div>
+								</div>	<!-- End of /.products -->
+					        </li>
+					        <li>
+					            <div class="products">
+									<a href="#">
+										<img src="{{$medi4->imagen}}" alt="">
+									</a>
+									<a href="#">
+										<h4>{{$medi4->nombre}}</h4>
+									</a>
+									<p class="price">From: £69.99</p>
+									<div >
+										<a class="view-link shutter" href="#">
+										<i class="fa fa-plus-circle"></i>Add To Cart</a>
+									</div>
+								</div>	<!-- End of /.products -->
+					        </li>
+					        <li>
+					            <div class="products">
+									<a href="#">
+										<img src="{{$medi5->imagen}}" alt="">
+									</a>
+									<a href="#">
+										<h4>{{$medi5->nombre}}</h4>
 									</a>
 									<p class="price">From: £69.99</p>
 									<div >
@@ -119,10 +119,10 @@ Productos destacados
 					        <li>
 					           <div class="products">
 									<a href="#">
-										<img src="images/product-image-8.jpg" alt="">
+										<img src="{{$medi6->imagen}}" alt="">
 									</a>
 									<a href="#">
-										<h4>Amazing Italian Sauces</h4>
+										<h4>{{$medi6->nombre}}</h4>
 									</a>
 									<p class="price">From: £69.99</p>
 									<div >
@@ -179,36 +179,24 @@ Productos destacados
 							<img src="images/descuento.png" alt="">
 						</div>
 						<div class="block">
-							<h4>Latest Food Items</h4>
+							<h4>DESCUENTOS DE HOY</h4>
 							<ul class="media-list">
 							 	<li class="media">
 							    	<a class="pull-left" href="#">
-							      		<img class="media-object" src="images/post-img.png" alt="...">
+							      		<img class="media-object" src="{{$medi7->imagen}}" alt="...">
 							    	</a>
 							    	<div class="media-body">
-							      		<a href="" class="media-heading">Lamb leg roast
-							      		<p>Lorem ipsum dolor sit amet.</p></a>
+							      		<a href="" class="media-heading">{{$medi7->nombre}}
+							      		<p></p></a>
 							    	</div>
 							  	</li>
 							  	<li class="media">
 							    	<a class="pull-left" href="#">
-							      		<img class="media-object" src="images/post-img-2.png" alt="...">
+							      		<img class="media-object" src="{{$medi8->imagen}}" alt="...">
 							    	</a>
 							    	<div class="media-body">
-							      		<a href="" class="media-heading"> Lamingtons
-							      		<p>Lorem ipsum dolor.</p></a>
-							    	</div>
-							  	</li>
-							  	<li class="media">
-							    	<a class="pull-left" href="#">
-							      		<img class="media-object" src="images/post-img-3.png" alt="...">
-							    	</a>
-							    	<div class="media-body">
-							      		<a href="" class="media-heading">
-							      		Anzac Salad
-							      		<p>Lorem ipsum dolor sit.</p>
-
-							      		</a>
+							      		<a href="" class="media-heading">{{$medi8->nombre}}
+							      		<p></p></a>
 							    	</div>
 							  	</li>
 							  </ul>
