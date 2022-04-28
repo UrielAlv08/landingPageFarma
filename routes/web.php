@@ -19,11 +19,11 @@ use App\Http\Controllers\MedicaController;
     return view('index');
 }); */
 
-Route::get('/', [MedicaController::class, 'index']);
+Route::get('/', [MedicaController::class, 'index'])->name('inicio');
 
-Route::get('/', function () {
+/* Route::get('/', function () {
     return view('farmacia.index');
-})->name('inicio');
+})->name('inicio'); */
 
 Route::get('/conocenos', function () {
     return view('farmacia.conocenos');

@@ -362,10 +362,10 @@
                     <div class="col-md-3">
                         <div class="products">
                             <a href="single-product.html">
-                                <img src="images/Aspirina.png" alt="">
+                                <img src="{{$medi1->imagen}}" alt="">
                             </a>
                             <a href="single-product.html">
-                                <h4>Aspirina</h4>
+                                <h4>{{$medi1->nombre}}</h4>
                             </a>
                             <p class="price"> $69.99</p>
                             <a class="view-link shutter" href="#">
@@ -375,10 +375,10 @@
                     <div class="col-md-3">
                         <div class="products">
                             <a href="single-product.html">
-                                <img src="images/Aspirina.png" alt="">
+                                <img src="{{$medi2->imagen}}" alt="">
                             </a>
                             <a href="single-product.html">
-                                <h4>Aspirina</h4>
+                                <h4>{{$medi2->nombre}}</h4>
                             </a>
                             <p class="price"> $69.99</p>
                             <a class="view-link shutter" href="#">
@@ -388,23 +388,10 @@
                     <div class="col-md-3">
                         <div class="products">
                             <a href="single-product.html">
-                                <img src="images/Aspirina.png" alt="">
+                                <img src="{{$medi3->imagen}}" alt="">
                             </a>
                             <a href="single-product.html">
-                                <h4>Aspirina</h4>
-                            </a>
-                            <p class="price"> $69.99</p>
-                            <a class="view-link shutter" href="#">
-                                <i class=""></i>Agregar al carrito</a>
-                        </div> <!-- End of /.products -->
-                    </div> <!-- End Of /.Col-md-3 -->
-                    <div class="col-md-3">
-                        <div class="products">
-                            <a href="single-product.html">
-                                <img src="images/Aspirina.png" alt="">
-                            </a>
-                            <a href="single-product.html">
-                                <h4>Aspirina</h4>
+                                <h4>{{$medi3->nombre}}</h4>
                             </a>
                             <p class="price"> $69.99</p>
                             <a class="view-link shutter" href="#">
@@ -414,23 +401,10 @@
                     <div class="col-md-3">
                         <div class="products">
                             <a href="single-product.html">
-                                <img src="images/Aspirina.png" alt="">
+                                <img src="{{$medi4->imagen}}" alt="">
                             </a>
                             <a href="single-product.html">
-                                <h4>Aspirina</h4>
-                            </a>
-                            <p class="price"> $69.99</p>
-                            <a class="view-link shutter" href="#">
-                                <i class=""></i>Agregar al carrito</a>
-                        </div> <!-- End of /.products -->
-                    </div> <!-- End Of /.Col-md-3 -->
-                    <div class="col-md-3">
-                        <div class="products">
-                            <a href="single-product.html">
-                                <img src="images/Aspirina.png" alt="">
-                            </a>
-                            <a href="single-product.html">
-                                <h4>Aspirina</h4>
+                                <h4>{{$medi4->nombre}}</h4>
                             </a>
                             <p class="price"> $69.99</p>
                             <a class="view-link shutter" href="#">
@@ -440,10 +414,10 @@
                     <div class="col-md-3">
                         <div class="products">
                             <a href="single-product.html">
-                                <img src="images/Aspirina.png" alt="">
+                                <img src="{{$medi5->imagen}}" alt="">
                             </a>
                             <a href="single-product.html">
-                                <h4>Aspirina</h4>
+                                <h4>{{$medi5->nombre}}</h4>
                             </a>
                             <p class="price"> $69.99</p>
                             <a class="view-link shutter" href="#">
@@ -453,10 +427,36 @@
                     <div class="col-md-3">
                         <div class="products">
                             <a href="single-product.html">
-                                <img src="images/Aspirina.png" alt="">
+                                <img src="{{$medi6->imagen}}" alt="">
                             </a>
                             <a href="single-product.html">
-                                <h4>Aspirina</h4>
+                                <h4>{{$medi6->nombre}}</h4>
+                            </a>
+                            <p class="price"> $69.99</p>
+                            <a class="view-link shutter" href="#">
+                                <i class=""></i>Agregar al carrito</a>
+                        </div> <!-- End of /.products -->
+                    </div> <!-- End Of /.Col-md-3 -->
+                    <div class="col-md-3">
+                        <div class="products">
+                            <a href="single-product.html">
+                                <img src="{{$medi7->imagen}}" alt="">
+                            </a>
+                            <a href="single-product.html">
+                                <h4>{{$medi7->nombre}}</h4>
+                            </a>
+                            <p class="price"> $69.99</p>
+                            <a class="view-link shutter" href="#">
+                                <i class=""></i>Agregar al carrito</a>
+                        </div> <!-- End of /.products -->
+                    </div> <!-- End Of /.Col-md-3 -->
+                    <div class="col-md-3">
+                        <div class="products">
+                            <a href="single-product.html">
+                                <img src="{{$medi8->imagen}}" alt="">
+                            </a>
+                            <a href="single-product.html">
+                                <h4>{{$medi8->nombre}}</h4>
                             </a>
                             <p class="price"> $69.99</p>
                             <div>
