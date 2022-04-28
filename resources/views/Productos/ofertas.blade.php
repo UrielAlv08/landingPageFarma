@@ -1,6 +1,6 @@
 @extends('layouts.layout')
 @section('nombre')
-    Productos de temporada
+    Ofertas
 @endsection
 
 <!Aparatado CSS>
@@ -232,7 +232,7 @@
 
                     </div> <!-- End of /.row -->
                 </div> <!-- End of /.container -->
-        </section> <!-- End of Section -->
+        </section> <!-- End of Section --
 
         <a id="back-top" href="#"></a>
         </body>

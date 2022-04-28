@@ -162,7 +162,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <a href="#">
+                    <a href="{{ route('inicio') }}">
                         <img src="images/Logooo.png" alt="logo">
                     </a>
                 </div> <!-- End of /.col-md-12 -->
@@ -190,7 +190,7 @@
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav nav-main">
-                    <li class="active"><a href="#">Inicio</a></li>
+                    <li class="active"><a href="{{ route('inicio') }}">Inicio</a></li>
                     <li><a href="{{ route('conocenos') }}">Conocenos</a></li>
                     <li><a href="{{ route('envioADomicilio') }}">Envio a domicilio</a></li>
                     <li><a href="{{ route('conocenos') }}">Tu carrito</a></li>
@@ -200,9 +200,9 @@
                             <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Destacados</a></li>
-                            <li><a href="#">De temporada</a></li>
-                            <li><a href="#">Ofertas</a></li>
+                            <li><a href="{{ route('productosDestacados') }}">Destacados</a></li>
+                            <li><a href="{{ route('productosDeTemporada') }}">De temporada</a></li>
+                            <li><a href="{{ route('ofertas') }}">Ofertas</a></li>
                         </ul>
                     </li> <!-- End of /.dropdown -->
 

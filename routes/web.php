@@ -45,4 +45,8 @@ Route::get('/envio', function () {
     return view('envio.envios');
 })->name('envioADomicilio');
 
+Route::get('/ofertas', function () {
+    return view('productos.ofertas');
+})->name('ofertas');
+
 

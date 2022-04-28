@@ -1,14 +1,35 @@
-@extends('layouts.layout')
-@section('nombre')
-Envios
-@endsection
+<!doctype html>
+<html lang="en">
 
-<!-- Aparatado CSS -->
-@section('css')
-    <link href="assets/css/datatables.min.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/styles.css" rel="stylesheet" type="text/css" />
-@endsection
-@section('content')
+<head>
+    <meta charset="UTF-8">
+    <title>@yield('nombre')</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" />
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- jS -->
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/jquery.nivo.slider.js" type="text/javascript"></script>
+    <script src="js/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="js/jquery.nicescroll.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+
+    @yield('css')
+</head>
 
 <body>
 
@@ -20,8 +41,9 @@ Envios
         <div class="container">
             <div class="row">
                 <div class="col-md-7">
-                    <p class="contact-action"><i class="fa fa-phone-square"></i>IN CASE OF ANY QUESTIONS, CALL THIS
-                        NUMBER: <strong>+565 975 658</strong></p>
+                    <p class="contact-action">¡ENVIOS EN 120 MINUTOS!<strong>click aquí</strong> para conocer detalles y
+                        lugares donde tenemos servicio.
+                        ¡Cada día estamos más cerca de tí!</p>
                 </div>
                 <div class="col-md-3 clearfix">
                     <ul class="login-cart">
@@ -133,145 +155,66 @@ Envios
 
 
 
-    <section id="single-product">
+    <!-- LOGO Start
+    ================================================== -->
+
+    <header>
         <div class="container">
             <div class="row">
-                <div class="col-md-5">
-                    <div class="single-product-img">
-                        <img src="images/single-product.png" alt="">
-                    </div>
-
-                </div> <!-- End of /.col-md-5 -->
-                <div class="col-md-4">
-                    <div class="block">
-                        <div class="product-des">
-                            <h4>Claritas est etiam</h4>
-                            <p class="price">$380</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, culpa, esse, magni
-                                omnis blanditiis unde vitae in nobis fuga optio numquam at ipsum impedit perspiciatis
-                                quia rem consequatur recusandae repudiandae provident nemo voluptatibus corporis ab id
-                                iste pariatur ipsam vero porro eos eaque rerum nam dolorum mollitia adipisci. Quaerat,
-                                ullam!</p>
-                            <a class="view-link" href="#"><i class="fa fa-plus-circle"></i>Add To Cart</a>
-                        </div> <!-- End of /.product-des -->
-                    </div> <!-- End of /.block -->
-                </div> <!-- End of /.col-md-4 -->
-                <div class="col-md-3">
-                    <div class="blog-sidebar">
-                        <div class="block">
-                            <h4 class="top-catagori-heading">Latest Food Items</h4>
-                            <ul class="media-list">
-                                <li class="media">
-                                    <a class="pull-left" href="#">
-                                        <img class="media-object" src="images/post-img.png" alt="...">
-                                    </a>
-                                    <div class="media-body">
-                                        <a href="" class="media-heading">Lamb leg roast
-                                            <p>Lorem ipsum dolor sit amet.</p>
-                                        </a>
-                                    </div>
-                                </li> <!-- End of /.media -->
-                                <li class="media">
-                                    <a class="pull-left" href="#">
-                                        <img class="media-object" src="images/post-img-2.png" alt="...">
-                                    </a>
-                                    <div class="media-body">
-                                        <a href="" class="media-heading"> Lamingtons
-                                            <p>Lorem ipsum dolor.</p>
-                                        </a>
-                                    </div>
-                                </li> <!-- End of /.media -->
-                                <li class="media">
-                                    <a class="pull-left" href="#">
-                                        <img class="media-object" src="images/post-img-3.png" alt="...">
-                                    </a>
-                                    <div class="media-body">
-                                        <a href="" class="media-heading">
-                                            Anzac Salad
-                                            <p>Lorem ipsum dolor sit.</p>
-
-                                        </a>
-                                    </div>
-                                </li> <!-- End of /.media -->
-                                <li class="media">
-                                    <a class="pull-left" href="#">
-                                        <img class="media-object" src="images/post-img-3.png" alt="...">
-                                    </a>
-                                    <div class="media-body">
-                                        <a href="" class="media-heading">
-                                            Anzac Salad
-                                            <p>Lorem ipsum dolor sit.</p>
-
-                                        </a>
-                                    </div>
-                                </li> <!-- End of /.media -->
-                            </ul> <!-- End of /.media-list -->
-                        </div> <!-- End of /.block -->
-
-                    </div> <!-- End of /.blog-sidebar -->
-
-                </div> <!-- End of /.col-md-3 -->
+                <div class="col-md-12">
+                    <a href="{{ route('inicio') }}">
+                        <img src="images/Logooo.png" alt="logo">
+                    </a>
+                </div> <!-- End of /.col-md-12 -->
             </div> <!-- End of /.row -->
-            <div class="row">
-                <div class="col-md-9">
-                    <!-- Nav tabs -->
-                    <ul class="nav nav-tabs">
-                        <li class="active"><a href="#home" data-toggle="tab">More Info</a></li>
-                        <li><a href="#profile" data-toggle="tab">Comments</a></li>
-                    </ul>
-
-                    <!-- Tab panes -->
-                    <div class="tab-content">
-                        <div class="tab-pane active" id="home">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eligendi quidem vel
-                                sit expedita nam sint non explicabo magni totam?</p>
-                        </div>
-                        <div class="tab-pane" id="profile">
-                            <p>No customer comments for the moment.</p>
-                        </div>
-                    </div>
-                </div> <!-- End of /.col-md-9 -->
-                <div class="col-md-3">
-                    <div class="blog-sidebar">
-                        <div class="block">
-                            <img src="images/food-ad.png" alt="">
-                        </div> <!-- End of /.block -->
-                    </div> <!-- End of /.blog-sidebar -->
-                </div> <!-- End of /.col-md-3 -->
-            </div> <!-- End of /.row -->
-        </div> <!-- End of /.Container -->
-    </section> <!-- End of /.Single-product -->
+        </div> <!-- End of /.container -->
+    </header> <!-- End of /Header -->
 
 
 
 
+    <!-- MENU Start
+    ================================================== -->
+
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div> <!-- End of /.navbar-header -->
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav nav-main">
+                    <li class="active"><a href="{{ route('inicio') }}">Inicio</a></li>
+                    <li><a href="{{ route('conocenos') }}">Conocenos</a></li>
+                    <li><a href="{{ route('envioADomicilio') }}">Envio a domicilio</a></li>
+                    <li><a href="{{ route('conocenos') }}">Tu carrito</a></li>
+                    <li class="dropdown">
+                        <a href="#">
+                            Productos
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{{ route('productosDestacados') }}">Destacados</a></li>
+                            <li><a href="{{ route('productosDeTemporada') }}">De temporada</a></li>
+                            <li><a href="{{ route('ofertas') }}">Ofertas</a></li>
+                        </ul>
+                    </li> <!-- End of /.dropdown -->
 
 
+                </ul> <!-- End of /.nav-main -->
+            </div> <!-- /.navbar-collapse -->
+        </div> <!-- /.container-fluid -->
+    </nav> <!-- End of /.nav -->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    @yield('content')
+    @yield('js')
 
 
     <!-- FOOTER Start
@@ -283,13 +226,28 @@ Envios
                 <div class="col-md-4">
                     <div class="block clearfix">
                         <a href="#">
-                            <img src="images/footer-logo.png" alt="">
+                            <img src="images/Logooo.png" alt="">
                         </a>
+                        <br>
+                        <br>
                         <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text ever since the 1500s
+                            Av. Enrique Díaz de León 261 Nte.<br>
+                            Col. Villaseñor, Guadalajara<br>
+                            Jalisco, México C.P. 44600<br><br><b>
+                                Teléfonos Contact Center:</b><br><a href="tel:+523338181818" style="
+    color: white;
+    text-decoration: underline;
+">(33) 3818 1818 </a>
+                            <br><a href="tel:+528332762242" style="
+    color: white;
+    text-decoration: underline;
+">(83) FARMACIA (32762242) </a>
                         </p>
-                        <h4 class="connect-heading">CONNECT WITH US</h4>
+                    </div> <!-- End Of /.block -->
+                </div> <!-- End Of /.Col-md-4 -->
+                <div class="col-md-4">
+                    <div class="block">
+                        <h4 class="connect-heading">Siguenos en nuestras redes</h4>
                         <ul class="social-icon">
                             <li>
                                 <a class="facebook-icon" href="#">
@@ -317,19 +275,7 @@ Envios
                                 </a>
                             </li>
                         </ul> <!-- End Of /.social-icon -->
-                    </div> <!-- End Of /.block -->
-                </div> <!-- End Of /.Col-md-4 -->
-                <div class="col-md-4">
-                    <div class="block">
-                        <h4>GET IN TOUCH</h4>
-                        <p><i class="fa  fa-map-marker"></i> <span>Food Code d.o.o.,</span>1000 Ljubljana Celovska
-                            cesta 135, Slovenia</p>
-                        <p> <i class="fa  fa-phone"></i> <span>Phone:</span> (+386) 40 123 456 </p>
 
-                        <p> <i class="fa  fa-mobile"></i> <span>Mobile:</span> (+386) 40 654 123 651</p>
-
-                        <p class="mail"><i class="fa  fa-envelope"></i>Eamil: <span>info@sitename.com</span>
-                        </p>
                     </div> <!-- End Of /.block -->
                 </div> <!-- End Of Col-md-3 -->
                 <div class="col-md-4">
@@ -363,7 +309,7 @@ Envios
 
 
         <!-- FOOTER-BOTTOM Start
-    ================================================== -->
+        ================================================== -->
 
         <div class="footer-bottom">
             <div class="container">
@@ -404,7 +350,8 @@ Envios
         </div> <!-- End Of /.footer-bottom -->
     </footer> <!-- End Of Footer -->
 
-    <a id="back-top" href="#"></a>
+
 </body>
+<!--end::Body-->
 
 </html>
